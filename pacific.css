@@ -2,7 +2,7 @@ header, hgroup, nav, footer, figure, figcaption, aside, section, article {
 	display: block;
 }
 body { /* Edited to make the background the gradient provided with image */
-	background-image: url('https://github.com/MeetKothari/meetkothari.github.io/blob/main/ptrbackground.jpg');
+	background-image: url('ptrbackground.jpg');
 	background-color: #00569f;
 	color: #666666;
 	font-family: Arial, Helvetica, sans-serif;
@@ -78,7 +78,7 @@ I used that to find the color for the name.
 	padding-left: 247px;
 	margin-right: auto;
 	margin-top: auto;
-	list-style-image: url('/Users/meetkothari/Desktop/HW2_zip/HW2_sourceCode/marker.gif');
+	list-style-image: url('marker.gif');
 	list-style-position: inside;
 }
 
@@ -146,7 +146,7 @@ nav a:hover {
 
 h1 { /* Editing to make the header look as needed */
 	color: white;
-	background-image: url('/Users/meetkothari/Desktop/HW2_zip 2/HW2_sourceCode/sunset.jpg');
+	background-image: url('sunset.jpg');
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	background-color:#000033;
