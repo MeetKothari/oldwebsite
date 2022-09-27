@@ -1,0 +1,210 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+body { /* Edited to make the background the gradient provided with image */
+	background-image: url('/Users/meetkothari/Desktop/HW2_zip 2/HW2_sourceCode/ptrbackground.jpg');
+	background-color: #00569f;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+
+Tips used:
+
+- The gradient background is done with the image provided (ptrbackground) but does not
+continue down the page. The page is solid #00569f below the gradient. 
+
+*/
+
+#contact {
+	display: block;
+	font-size: 90%;
+	margin-left: auto;
+	text-align: left;
+	overflow:visible;
+	resize:both;
+	padding-left: 215px;
+}
+
+#contact .resort { /* CSS Styling for the bottom contact */
+	color: #007474;
+	font-weight: bold;
+}
+
+/* Tips used:
+
+- The resort name gets special coloring in the main page content.
+- In the Discord, someone mentioned a software used to find Hex colorings,
+I used that to find the color for the name. 
+
+*/
+
+#content .resort { /* styling for resort name */
+
+	display: box;
+	color: #007474;
+	font-weight: bold;
+
+}
+
+/* Tips used:
+
+- The resort name gets special coloring in the main page content.
+- In the Discord, someone mentioned a software used to find Hex colorings,
+I used that to find the color for the name. 
+
+*/
+
+#content p { /* CSS styling for the excerpt above the bullet points */
+	display: block;
+	margin-left: 10px;
+	padding-left: 205px;
+	padding-right: 10px;
+	margin-right: auto;
+	text-align: left;
+	min-width: 20px;
+}
+
+/* Tips used:
+
+- I used padding to make sure it would react the right way when the window was resized.
+
+*/
+
+#content ul { /* CSS styling for the bullet points, aligns with paragraph above it */
+	display: block;
+	margin-left: 10px;
+	padding-left: 247px;
+	margin-right: auto;
+	margin-top: auto;
+	list-style-image: url('/Users/meetkothari/Desktop/HW2_zip/HW2_sourceCode/marker.gif');
+	list-style-position: inside;
+}
+
+/* Tips used:
+
+- Notice that the bulleted list uses as special bullet (included with your files as marker.gif ),
+and note how that bullet aligns with the paragraph above it.
+
+- I used padding to make sure it would react the right way when the window was resized.
+
+
+*/
+
+img { /* Image Styling */
+	margin-left: 215px;
+	margin-top: 0px;	
+	float: left; 
+	padding-right: 10px;
+	text-align: center;
+}
+
+/* Tips used:
+
+- from https://linuxhint.com/css-wrap-text-around-image/: tutorial on wrapping text around images
+- from 
+
+*/
+
+nav { /* CSS Styling for the nav */
+	display: box;
+	background-color: #90c7e3;
+	width: 200px;
+	height: 400px;
+	margin-top: -19px;
+}
+
+nav ul {
+	display: box;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-top: 20px;
+	margin-left: -15px;
+	list-style: none;
+}
+
+/* CSS Styling for the links! */
+
+nav a:link { 
+	text-decoration: none;
+	color: #000830;
+
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+
+/* Tips used:
+
+- https://www.w3schools.com/css/css_link.asp: to style the links, remove underline and bullet
+
+*/
+
+h1 { /* Editing to make the header look as needed */
+	color: white;
+	background-image: url('/Users/meetkothari/Desktop/HW2_zip 2/HW2_sourceCode/sunset.jpg');
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-color:#000033;
+	margin-bottom: 0;
+	padding: 10px;
+}
+
+/* Tips used:
+- https://www.w3schools.com/cssref/pr_background-position.asp: background-position
+- https://www.w3schools.com/cssref/pr_background-color.asp: to give the image the illusion of being stretched
+- https://www.w3schools.com/cssref/pr_background-repeat.asp: repeat removal
+*/
+
+h2 { /* editing to make the header move */
+	color: #3399CC;
+	margin-top: -375px;
+	margin-left: 220px;
+
+}
+
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+dt {
+	color: #000033;
+}
+footer { /* CSS Styling to make the footer italics and change its position a bit */
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	margin-left: 205px;
+	margin-top: 60px;
+	padding-bottom: 20px;
+	padding-left: 6px;
+}
+
+#wrapper { /* Edited to make the background white square, and give the nav bar the apperance of being longer */
+	background: linear-gradient(
+    to right,
+    #90c7e3 0px,
+    #90c7e3 200px,
+    white 200px,
+    white 100%);
+	min-width: 600px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+
+/* 
+
+Adhered to the following tips/tricks for the '#wrapper'
+- The 'main' area of the page is 80% of the page width, but with a 600px minimum. 
+- It is centered in the browser. 
+- Background colors may be deceiving and hide the true layout of the page. 
+
+-from https://www.w3schools.com/css/css3_gradients.asp: learning how to make CSS gradients!
+
+*/
