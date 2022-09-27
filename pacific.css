@@ -2,7 +2,7 @@ header, hgroup, nav, footer, figure, figcaption, aside, section, article {
 	display: block;
 }
 body { /* Edited to make the background the gradient provided with image */
-	background-image: url('/Users/meetkothari/Desktop/HW2_zip 2/HW2_sourceCode/ptrbackground.jpg');
+	background-image: url('https://github.com/MeetKothari/meetkothari.github.io/blob/main/ptrbackground.jpg');
 	background-color: #00569f;
 	color: #666666;
 	font-family: Arial, Helvetica, sans-serif;
