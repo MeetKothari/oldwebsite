@@ -1,132 +1,56 @@
-<!--
-
-Copyright (c) 2021 by Meet. All rights reserved. May be freely copied or
-excerpted for educational purposes with credit to the author.
-
-File: index.html
-
-Date of Creation: 9/10/22
-
-GUI Assignment: Creating Your First Web Page
-
-Meet Kothari, UMass Lowell Computer Science, meet_kothari@student.uml.edu
-
-This web page is my submission for HW1. Given the freedom afforded by the prompt, 
-I chose to center the topic around something I love: basketball!
-
-This page serves as a compilation of my top 3 basketball players, ranked by skill. 
-Each player has their own title, which is a link that leads to their basketball reference page, a site that compiles an NBA player's total stats,
-a picture of them to my liking, a short spiel about who they are and why I like them, and a table which contains- in my opinion- their skill as a player. 
-
--->
-
-<!--
-  Sources: 
-  - https://jigsaw.w3.org/css-validator/validator (used the validator's given code to demonstrate validity of website)
-  - https://youtu.be/G3e-cpL7ofc (this is a link to the tutorial I did over the summer, this is where I learned some CSS effects and how to make button shapes)
-  - https://www.sitepoint.com/a-minimal-html-document-html5-edition/ (basic html5 structure as discussed in class)
-  - https://www.htmlcsscolor.com (used to find the correct desired colors for my webpage)
-  - https://www.w3schools.com/css/css_border.asp (border aesthetics)
-  - https://www.basketball-reference.com (for player links)
--->
-
-<!-- Basic HTML5 structure start!-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <title>Pacific Trails Resort</title>
     <meta charset="utf-8">
-    <title> Meet's First Webpage! (HW1) </title> <!-- A boring, but informative title. -->
-    <link rel="stylesheet" type="text/css" href="./css/style.css" <!-- Linking style elements. -->
-    <script src="script.js"></script>
-  </head>
-  <!-- Begins the body, which contains most of the page content!-->
-  <body>
-    <!-- page content -->
-    <a class = "title-meet"> Meet's Top 3 NBA Players (of all time!) </a> <!-- Title -->
-    <a class = "info-bubble"> Fun fact: If you click on their names, it takes you to their basketball reference pages, where you can see all their stats. </a> <!-- Info Bubble! -->
+    <link href="pacific.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>   <![endif]-->
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Pacific Trails Resort</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="yurts.html">Yurts</a>
+                </li>
+                <li><a href="activities.html">Activities</a>
+                </li>
+                <li><a href="reservations.html">Reservations</a>
+            </ul>
+        </nav>
+        <div id="content">
+            <h2>Enjoy Nature in Luxury</h2>
+            <img src="coast.jpg" alt="Pacific Coast">
+            <p><span class="resort">Pacific Trails Resort</span> offers a special lodging experience on the California North Coast. Relax in serenity with panoramic views of the Pacific Ocean.</p>
+            <ul>
+                <li>Private yurts with decks overlooking the ocean</li>
+                <li>Activities lodge with fireplace and gift shop</li>
+                <li>Nightly fine dining at the Overlook Cafe</li>
+                <li>Heated outdoor pool and whirlpool</li>
+                <li>Guided hiking tours of the redwoods</li>
+            </ul>
+            <div id="contact">
+                <span class="resort">Pacific Trails Resort</span>
+                <br> 12010 Pacific Trails Road
+                <br> Zephyr, CA 95555
+                <br>
+                <br> 888-555-5555
+                <br>
+                <br>
+            </div>
+        </div>
+        <footer>
+            Copyright &copy; 2014 Pacific Trails Resort
+            <br>
+            <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+        </footer>
+    </div>
+</body>
 
-    <!-- Michael Jordan setup -->
-    <img class = "mjpic" src = "./images/michael-jordan-looks.jpeg" alt = "MJ">
-    <a href = "https://www.basketball-reference.com/players/j/jordami01.html" target = "_blank" class = "goat"> 1. Michael Jordan </a> <!-- Title for MJ, my first part of the webpage -->
-    <table class = "mj-table"> <!-- Table -->
-      <tr>
-        <td> Finishing: 10/10 </td>
-        <td> Shooting: 8/10 </td>
-        <td> Defense: 9/10 </td>
-        <td> Playmaking: 7/10 </td>
-        <td> Leadership: 10/10 </td>
-        <td> Total: 44/50 </td>
-      </tr>
-    </table>    <!-- End table -->
-<p class = "mjspiel" > Michael Jeffrey Jordan, also known by his initials MJ, is who I consider to be the greatest basketball player of all time. <!-- Text -->
-  Not only was I introduced to the game through him, but I think his win-at-all costs mentality and borderline psychopathic desire to be the best 
-  in all facets of the game are some traits you could never duplicate.
-</p>
-
-<!-- LeBron James setup -->
-<img class = "lbjpic" src = "./images/1833.webp" alt = "LBJ">
-<a href = "https://www.basketball-reference.com/players/j/jamesle01.html" target = "_blank" class = "lbj"> 2. LeBron James </a> <!-- Title -->
-    <table class = "lbj-table"> <!-- Table -->
-      <tr>
-        <td> Finishing: 10/10 </td>
-        <td> Shooting: 7/10 </td>
-        <td> Defense: 8/10 </td>
-        <td> Playmaking: 9/10 </td>
-        <td> Leadership: 9/10 </td>
-        <td> Total: 43/50 </td>
-      </tr>
-    </table>    <!-- End table -->
-<p class = "lbjspiel" > LeBron Raymone James Sr. is my pick for the second best player of all time. Some people think that this is an insult of some sort, but rather <!-- Text -->
-  I give that title out with a badage of honor. I think LeBron is a freak of nature; his wingspan, build, and near photographic knowledge of the game are all facets of 
-  one of the most complete players in NBA history. I. personally, just don't think his overall approach to the game speaks to me like MJ's.
-</p>
-
-<!-- Kobe Bryant setup -->
-<img class = "kobepic" src = "./images/200126210422-27-kobe-bryant-gallery-restricted.jpeg" alt = "Kobe">
-<a href = "https://www.basketball-reference.com/players/b/bryanko01.html" target = "_blank" class = "kobe"> 3. Kobe Bryant </a> <!-- Title -->
-    <table class = "kobe-table"> <!-- Table  -->
-      <tr>
-        <td> Finishing: 10/10 </td>
-        <td> Shooting: 9/10 </td>
-        <td> Defense: 7/10 </td>
-        <td> Playmaking: 7/10 </td>
-        <td> Leadership: 8/10 </td>
-        <td> Total: 41/50 </td>
-      </tr>
-    </table>    <!-- End table -->
-<p class = "kobespiel" > The late, the great, Kobe "Bean" Bryant! A lot of people don't even have Kobe in their top 5s anymore, but to me, <!-- Text -->
-  the real GOAT debate belongs between these three, and these three only. While not as efficient as LeBron or as instantly great as MJ, Kobe represented 
-  a middle ground between the two; for all of MJ's pros, he could never shoot the ball as well as Kobe. And, for all of LeBron's greatness, he didn't have the 
-  killer instinct, the sheer drive that Kobe did. May he rest in peace.
-</p>
-  
-<!-- Honorable Mention setup -->
-<img class = "magicpic" src = "./images/magic-johnson-iso-archive.jpeg" alt = "Magic">
-<a href = "https://www.basketball-reference.com/players/j/johnsma02.html" target = "_blank" class = "magic"> HM: Magic Johnson </a> <!-- Title  -->
-    <table class = "magic-table"> <!-- Table  -->
-      <tr>
-        <td> Finishing: 8/10 </td>
-        <td> Shooting: 6/10 </td>
-        <td> Defense: 8/10 </td>
-        <td> Playmaking: 10/10 </td>
-        <td> Leadership: 8/10 </td>
-        <td> Total: 40/50 </td>
-      </tr>
-    </table>    <!-- End table -->
-<p class = "magicspiel" > Magic Johnson was someone I wanted to make sure was on the list, even as an honorable mention, simply due to the fact that I <!-- Text -->
-  personally think his game was super ahead of his time. His passing, defense- even the swagger and speed he played with was ahead of his time for someone of his era.
-  I would've loved to see him in today's NBA, as he paved the way for future oversized guards and point forwards as a whole.
-</p>
-
-<p> <!-- used to show website visitors that my site passed the testing. and validates as per CSS level 3 + SVG -->
-<a href="http://jigsaw.w3.org/css-validator" target = "_blank" >
-    <img style="border:0;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="Valid CSS!"/>
-    </a>
-</p>
-
-  </body>
 </html>
-
-<!-- Basic HTML5 structure end!-->
