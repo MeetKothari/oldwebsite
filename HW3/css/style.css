@@ -1,0 +1,94 @@
+/*
+File: style.css
+Date of Creation: 10/23/22
+GUI Assignment: Creating an Interactive Dynamic Table
+
+Meet Kothari, UMass Lowell Computer Science, meet_kothari@student.uml.edu
+
+This is the accompanying css for my html page. It is used to style various elements defined in the index file.
+
+*/
+
+body { /* body color and text align */
+  background-color: #FEFBEA;  
+  text-align:center;
+} 
+
+.button { /* submit button */
+    width: 50%;
+}
+
+table { /* table stuff */
+  border: 3px solid black;
+  table-layout: fixed;
+  margin: auto;
+  min-width: 50%;
+  max-width: 70%;
+  empty-cells: show;
+  padding: 10px;
+  justify-content: center;
+}
+
+th { /* header */
+  padding: 0.5rem;
+  width: 10%;
+  border: 3px solid black;
+  background-color:  navy;
+}
+
+td { /* body color and text align */
+  border: 3px solid black;
+  text-align: center;
+}
+
+
+tr:nth-child(even){ /* make evens purple */
+  background-color: purple;
+  color: white;
+}
+
+tr:nth-child(odd){ /* make odds pinkish */
+  background-color: palevioletred;
+  color: white;
+}
+
+input { /* https://www.w3schools.com/howto/howto_css_stacked_form.asp */
+  border: 2px solid navy;
+  border-radius: 14px;
+  padding: 10px;
+}
+
+body { /* body color and text align */
+    text-align: center;
+}
+form { /* form formatting */
+  font-weight: bold;
+	font-style: italic;
+  padding: 10px;
+	
+}
+
+input:invalid { /* if input is invalid */
+  border: 2px dashed red;
+}
+
+input:valid { /* if input is valid */
+  border: 2px dashed green;
+}
+
+label { /* label formatting*/
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+h4 { /* Styling for header */
+  padding: 10px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: monospace;
+  margin: auto;
+  display:block;
+  border-bottom:2px solid black;
+  color: green;
+
+}
