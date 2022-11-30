@@ -1,0 +1,77 @@
+<!--
+File: index.html
+Date of Creation: 11/23/22
+GUI Assignment: Using the jQuery Plugin/UI with Your Dynamic Table
+Meet Kothari, UMass Lowell Computer Science, meet_kothari@student.uml.edu
+This web page is my submission for HW4, Part 2.
+-->
+
+<!-- Basic HTML5 structure start!-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> <!-- Required CSS (from assignment) -->
+        <link rel="stylesheet" href="css/style.css"> <!-- My personal CSS -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script> <!-- Required JS (from assignment)-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" defer></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js" defer></script>
+        <script src="js/script.js" defer></script> <!-- My personal JS -->
+        
+        <title> HW4P2 </title> <!-- A boring, but informative title. -->
+    </head> <!-- End head -->
+    
+    <!-- Begins the body, which contains most of the page content!-->
+    <body> <!-- Page Content -->
+                <div class = "container">
+                    <h3> COMMAND PANEL </h3>
+                    <label> (ENTER NUMBER OF TAB TO REMOVE), (EX: "2") </label>
+                    <input for="indexNum" class ="button" id="indexNum" type="number">
+                    <button type="button" class ="topbutton" id="remove"> Remove a specific tab! </button><br>
+                    <button type="button" class ="topbutton" id="save"> Save Table! </button>
+                    <button type="button" class ="topbutton" id="delete"> Remove all tabs! </button>
+                    </div>
+                    <h4> DYNAMIC MULTIPLICATION TABLE (with sliders!) </h4>
+                    <form class ="cmxform" id = "form"> <!-- Template provided in assignment prompt -->
+                        <fieldset>
+                            <legend> X Values </legend> 
+                            <p>
+                                <div id="mySlider"></div>
+                                <label for ="minY"> Min. Value of X (decimals will be rejected, input must be between -50 and 50) </label>
+                                <input id ="minY" name = "minY" min="-50" max="50" type="number"/>
+                            </p>
+                            <p>
+                                <div id="mySlider2"></div>
+                                <label for ="maxY"> Max. Value of X (decimals will be rejected, input must be between -50 and 50) </label>
+                                <input id ="maxY" name = "maxY" min="-50" max="50" type="number"/>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend> Y Values </legend>
+                            <p>
+                                <div id="mySlider3"></div>
+                                <label for ="minX"> Min. Value of Y (decimals will be rejected, input must be between -50 and 50) </label>
+                                <input id ="minX" name = "minX" min="-50" max="50" type="number"/>
+                            </p>
+                            <p>
+                                <div id="mySlider4"></div>
+                                <label for ="maxX"> Max. Value of Y (decimals will be rejected, input must be between -50 and 50) </label>
+                                <input id ="maxX" name = "maxX" min="-50" max="50" type="number"/>
+                            </p>
+                            <p>
+                                <input class ="bottombutton" type="submit" value="Create Table"/>
+                            </p>
+                        </fieldset>
+                    </form>   <!-- source: 12_Javascript_1_inclass4 -->
+                    <div class="nav nav-tabs"id="myTabs">
+                        <ul class ="navtabs" id ="navtabs">
+                        </ul>
+                <div id='error'></div>
+                <div id='error1'></div>
+                <div id='table'></div>
+    </body>
+</html>
