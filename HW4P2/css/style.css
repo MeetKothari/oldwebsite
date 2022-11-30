@@ -1,0 +1,280 @@
+/*
+File: style.css
+Date of Creation: 11/23/22
+GUI Assignment: Using the jQuery Plugin/UI with Your Dynamic Table
+Meet Kothari, UMass Lowell Computer Science, meet_kothari@student.uml.edu
+This css is my submission for HW4, Part 2.
+*/
+
+body { /* body color and text align */
+  background-color: #FEFBEA;  
+  text-align:center;
+} 
+
+table { /* table stuff */
+  border: 3px solid black;
+  table-layout: fixed;
+  margin: auto;
+  min-width: 50%;
+  max-width: 70%;
+  empty-cells: show;
+  padding: 10px;
+  justify-content: center;
+}
+
+th { /* header */
+  padding: 0.5rem;
+  width: 10%;
+  border: 3px solid black;
+  background-color:  navy;
+}
+
+td { /* body color and text align */
+  border: 3px solid black;
+  text-align: center;
+}
+
+
+tr:nth-child(even){ /* make evens purple */
+  background-color: purple;
+  color: white;
+}
+
+tr:nth-child(odd){ /* make odds pinkish */
+  background-color: palevioletred;
+  color: white;
+}
+
+input { /* https://www.w3schools.com/howto/howto_css_stacked_form.asp */
+  border: 2px solid navy;
+  border-radius: 14px;
+  padding: 10px;
+}
+
+body { /* body color and text align */
+    text-align: center;
+}
+form { /* form formatting */
+  font-weight: bold;
+	font-style: italic;
+  padding: 10px;
+	
+}
+
+input {
+  background: #FEFBEA;
+  color: green;
+}
+
+input:invalid { /* if input is invalid */
+  border: 2px dashed red;
+}
+
+input:valid { /* if input is valid */
+  border: 2px dashed green;
+}
+
+label { /* label formatting*/
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+h3, h4 { /* Styling for header */
+  padding: 10px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: monospace;
+  margin: auto;
+  display:block;
+  color: green;
+  font-size: 35px;
+
+}
+
+.container {
+  border: 4px dashed green;
+  padding: 10px;
+  margin: auto;
+}
+
+label.error { /* css for validation errors, https://stackoverflow.com/questions/14913677/jquery-validation-plugin-message-style */
+    color: red;
+    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1px 5px 0px 5px;
+    
+}
+
+#mySlider {
+  width:300px; 
+  height:23px; 
+  border: solid black 4px; 
+  position:relative;
+  left:4px; 
+  top:4px;
+  background: crimson;
+  border-radius: 10px;
+  margin: auto;
+  
+}
+
+#mySlider .ui-slider-handle {
+  width:14px; 
+  height:23px; 
+  top:-4px;
+  background: green;
+  border: solid black 4px; 
+}
+
+#mySlider2 {
+  width:300px; 
+  height:23px; 
+  border: solid black 4px; 
+  position:relative;
+  left:4px; 
+  top:4px;
+  background: crimson;
+  border-radius: 10px;
+  margin: auto;
+}
+
+#mySlider2 .ui-slider-handle {
+  width:14px; 
+  height:23px; 
+  top:-4px;
+  background: green;
+  border: solid black 4px; 
+}
+
+#mySlider3 {
+  width:300px; 
+  height:23px; 
+  border: solid black 4px; 
+  position:relative;
+  left:4px; 
+  top:4px;
+  background: green;
+  border-radius: 10px;
+  margin: auto;
+  
+}
+
+#mySlider3 .ui-slider-handle {
+  width:14px; 
+  height:23px; 
+  top:-4px;
+  background: crimson;
+  border: solid black 4px; 
+}
+
+#mySlider4 {
+  width:300px; 
+  height:23px; 
+  border: solid black 4px; 
+  position:relative;
+  left:4px; 
+  top:4px;
+  background: green;
+  border-radius: 10px;
+  margin: auto;
+}
+
+#mySlider4 .ui-slider-handle {
+  width:14px; 
+  height:23px; 
+  top:-4px;
+  background: crimson;
+  border: solid black 4px; 
+}
+
+#form {
+  padding: 10px;
+  font-size: 12px;
+  margin-right: 500px;
+  background-color: #FEFBEA;
+  border: solid green 6px;
+}
+
+fieldset {
+  border: solid green 4px; 
+  color: green;
+}
+
+legend{
+  color: green;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#myTabs {
+  background-color: #FEFBEA;
+}
+
+#myTabs .ui-widget-header {
+ border:1px solid green; 
+ background:green none; 
+ font-size:80%;
+ color: #FEFBEA;
+}
+
+#myTabs .ui-widget-header > li {
+ border:3px solid #FEFBEA; 
+ background:green none; 
+ font-size:20px;
+ color: #FEFBEA;
+ margin: 5px;
+}
+
+#myTabs .ui-widget-header > li a {
+ color: #FEFBEA;
+ margin: 5px;
+}
+
+
+#myTabs.ui-tabs-active {
+  background-color: red;
+  color: red;
+  margin: 5px;
+}
+
+#myTabs .ui-tabs-active {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.nav-tabs {
+   color: green;
+}
+
+.topbutton {
+
+  border-radius: 10px;
+  border: solid double black 4px;
+  cursor:pointer;
+  background: green;
+  color: #FEFBEA;
+  padding: 5px;
+  margin: auto;
+  padding: 10px;
+  margin: 2px;
+
+}
+
+.bottombutton{
+  border-radius: 10px;
+  border: solid double black 4px;
+  cursor:pointer;
+  background: green;
+  color: #FEFBEA;
+  padding: 5px;
+  margin: auto;
+}
+
+label {
+  color: green;
+  font-weight: bold;
+  font-style: normal;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 1px 5px 0px 5px;
+
+}
