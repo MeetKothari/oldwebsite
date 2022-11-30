@@ -1,4 +1,4 @@
-# This is the submission for Part 1 of HW4. All of my sources are embedded in the code.
+# This is the submission for Part 2 of HW4. All of my sources are embedded in the code.
 
 I believe my degree of success for this assignment is ~90%:
 
