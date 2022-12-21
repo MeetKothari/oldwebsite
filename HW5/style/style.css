@@ -1,0 +1,162 @@
+/*
+File: style.css
+Date of Creation: 12/15/22
+GUI Assignment: Implementing a Bit of Scrabble with Drag-and-Drop (with Extra Credits)
+Meet Kothari, UMass Lowell Computer Science, meet_kothari@student.uml.edu
+This web page is a part of my submission for HW5.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); /* font */
+
+body {  /* body*/
+    font-family: Poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: snow;
+}
+
+
+ /* styling for various aspects of the rules div */
+.rules { 
+    font-size: 15px;
+}
+
+.rulescontainer {
+    width: 1000px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #ff4244;
+    color: snow;
+    border: 3px solid maroon;
+    -webkit-text-stroke: 1px black;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.rulescontainer h2 {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    border-bottom: 8px solid  snow;
+}
+
+.rulescontainer .buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+ /* CSS styling for various parts of the scoreboard div */
+.scorecontainer {
+    background-color: snow;
+    border-radius: 5px;
+    padding: 5px;
+    border: 3px solid maroon;
+}
+
+.scoremessage {
+    color: #ff4244;
+}
+
+.buttons button {
+    border: none;
+    outline: snow;
+    font-size: 15px;
+    border-radius: 5px;
+    width: calc(100% / 2 - 8px);
+    color: #ff4244;
+    cursor: pointer;
+    border: 3px solid maroon;
+}
+
+ /* board */
+.boardimage { /* https://stackoverflow.com/questions/10829675/how-to-put-an-image-in-div-with-css */
+    display: flex;
+    width:600px; /*width of your image*/
+    height:100px; /*height of your image*/
+    position: absolute;
+    top: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image:url('C:/Users/Meet_Kothari/Desktop/HW5/graphics_data/Scrabble_Board_OneLine.png');
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+} 
+
+ /* tilerack */
+.tileholderimage { /* https://stackoverflow.com/questions/10829675/how-to-put-an-image-in-div-with-css */
+    display: flex;
+    width:600px; /*width of your image*/
+    height:100px; /*height of your image*/
+    position: absolute;
+    top: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image:url('C:/Users/Meet_Kothari/Desktop/HW5/graphics_data/scrabble-tile-holder-406774_640.png');
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+} 
+
+ /* tiles themselves */
+#tiles {
+    display: flex;
+    position: absolute;
+    width: 10px;
+    top: 800px;
+    margin-left: auto;
+    margin-right: 450px;
+    padding: 5px;
+}
+
+/* styling after tile generation */
+#tileNum0 {
+    height: 600%;
+    width: 600%;
+    padding: 5px;
+ }
+
+ #tileNum1 {
+    height: 600%;
+    width: 600%;
+    padding: 5px;
+ }
+ #tileNum2 {
+    height: 600%;
+    width: 600%;
+    padding: 5px;
+ }
+ #tileNum3 {
+    height: 600%;
+    width: 600%;
+    padding: 5px;
+ }
+ #tileNum4 {
+    height: 600%;
+    width: 600%;
+    padding: 5px;
+ }
+ #tileNum5 {
+    height: 600%;
+    width: 600%;
+    padding: 5px;
+ }
+ #tileNum6 {
+    height: 600%;
+    width: 600%;
+    padding: 5px;
+ }
+
+  /* change outline of tile when dragging */
+ #tileNum0.ui-draggable-dragging { background: green; }
+ #tileNum1.ui-draggable-dragging { background: green; }
+ #tileNum2.ui-draggable-dragging { background: green; }
+ #tileNum3.ui-draggable-dragging { background: green; }
+ #tileNum4.ui-draggable-dragging { background: green; }
+ #tileNum5.ui-draggable-dragging { background: green; }
+ #tileNum6.ui-draggable-dragging { background: green; }
+ #tileNum7.ui-draggable-dragging { background: green; }
+
+  /* change drop zone when given valid input */
+ .ui-over { background: black;}
