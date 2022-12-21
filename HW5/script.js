@@ -75,7 +75,7 @@ function generateTiles() {
         // console.log(random);
         tileVals.push(random.letter); // push the letter element of the random.json into the array
         var letter_value = tileVals[i]; // set the letter value to be equal to the ith value of the letter from the for loop
-        tiles += "<img id='tileNum" + i + "' class='board-piece" + letter_value + "' src='" + "images/Scrabble_Tile_" + letter_value + ".jpg" + "'></img>"; 
+        tiles += "<img id='tileNum" + i + "' class='board-piece" + letter_value + "' src='" + "./images/Scrabble_Tile_" + letter_value + ".jpg" + "'></img>"; 
         //i++;
         // console.log(tiles);
     }
