@@ -1,0 +1,63 @@
+<!--
+File: index.html
+Date of Creation: 12/15/22
+GUI Assignment: Implementing a Bit of Scrabble with Drag-and-Drop (with Extra Credits)
+Meet Kothari, UMass Lowell Computer Science, meet_kothari@student.uml.edu
+This web page is my submission for HW5
+-->
+
+<!-- Basic HTML5 structure start!-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> <!-- Required CSS (from assignment) -->
+        <link rel="stylesheet" href="css/style.css"> <!-- My personal CSS -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script> <!-- Required JS (from assignment)-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" defer></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js" defer></script>
+        <script src="js/script.js" defer></script> <!-- My personal JS --> 
+        
+        <title> HW5 </title> <!-- A boring, but informative title. -->
+    </head> <!-- End head -->
+<!-- Begins the body, which contains most of the page content!-->
+    <body> <!-- Page Content -->
+    <div class="rulescontainer">
+        <h2> Rules </h2>
+        <div class="content">
+            <div class="board"></div>
+            <div class="details">
+                <p class = "rules"><span> - The <em>'bonus'</em> squares will give you extra points, depending on what the <em>'bonus'</em> involves. </span></p>
+                <p class = "rules"><span> - Your entered word must be a word found in the latest version of the <em> 'Oxford Dictionary of English' </em>.</span></p>
+                <p class = "rules"><span> - Your entered word must contain <em> at least </em> two letters, with no spaces between the letters. </span></p>
+            </div>
+            <div class = letters></div>
+            <div class="scorecontainer"> 
+                <p class ="scoremessage"> Your current score is: <span id="score"></span></p>
+            </div>
+            <div class ="buttons">
+                <button class="reset-tiles" onclick="reset()"> Get new tiles! (restart the game) </button>
+                <button class="submit-word" onclick="submit()"> Submit your word! </button>
+            </div>
+
+        </div>
+    </div>
+    <div class ="boardimage"> <!-- https://stackoverflow.com/questions/10829675/how-to-put-an-image-in-div-with-css -->
+        <img src="C:\Users\Meet_Kothari\Desktop\HW5\graphics_data\blankspace.png" class = "dz" alt="">
+        <img src="C:\Users\Meet_Kothari\Desktop\HW5\graphics_data\blankspace.png" class = "dz" alt="">
+        <img src="C:\Users\Meet_Kothari\Desktop\HW5\graphics_data\blankspace.png" class = "dz" alt="">
+        <img src="C:\Users\Meet_Kothari\Desktop\HW5\graphics_data\triplelet.png"  class = "tripdz"alt="">
+        <img src="C:\Users\Meet_Kothari\Desktop\HW5\graphics_data\blankspace.png" class = "dz" alt="">
+        <img src="C:\Users\Meet_Kothari\Desktop\HW5\graphics_data\doublelet.png"  class = "doubdz" alt="">
+        <img src="C:\Users\Meet_Kothari\Desktop\HW5\graphics_data\blankspace.png" class = "dz" alt="">
+        <img src="C:\Users\Meet_Kothari\Desktop\HW5\graphics_data\blankspace.png" class = "dz" alt="">
+    </div>
+    <div class ="tileholderimage"></div>
+    <div id="tiles"></div> 
+    </body>
+</html>
+
