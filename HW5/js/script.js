@@ -75,7 +75,7 @@ function generateTiles() {
         // console.log(random);
         tileVals.push(random.letter); // push the letter element of the random.json into the array
         var letter_value = tileVals[i]; // set the letter value to be equal to the ith value of the letter from the for loop
-        tiles += "<img id='tileNum" + i + "' class='board-piece" + letter_value + "' src='" + "C:/Users/Meet_Kothari/Desktop/HW5/Scrabble_Tiles/Scrabble_Tile_" + letter_value + ".jpg" + "'></img>"; 
+        tiles += "<img id='tileNum" + i + "' class='board-piece" + letter_value + "' src='" + "images/Scrabble_Tile_" + letter_value + ".jpg" + "'></img>"; 
         //i++;
         // console.log(tiles);
     }
@@ -260,11 +260,11 @@ function droppableCreate(){
         // letter -> in-game score
         const letterVals = {
             "A":1, 
-	        "B":3, 
-	        "C":3, 
-	        "D":2, 
-	        "E":1, 
-	        "F":4, 
+	    "B":3, 
+	    "C":3, 
+	    "D":2, 
+	    "E":1, 
+	    "F":4, 
             "G":2, 
             "H":4, 
             "I":1, 
