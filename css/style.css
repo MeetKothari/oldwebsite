@@ -1,305 +1,33 @@
-/*
+body {
+    background-color: #9cadce;
+    color: black;
+}
 
-Copyright (c) 2021 by Meet. All rights reserved. May be freely copied or
-excerpted for educational purposes with credit to the author.
+.gui1 {
+    display: flexbox;
+    padding: 5px;
+    font-family: Menlo;
+    font-size: 25px;
+    text-align: center;
+    background-color: #d1cfe2;
+    border-radius: 8px;
+    border: 6px solid #d1cef3;
+    margin-top: 500px;
+    margin-right: 3px;
+}
 
-File: style.css
+.links {
+    list-style: none;
+    padding: 2px;
+    display: block;
+    line-height: 40px;
+    margin-right: 1000px;
+    margin-top: 100px;
+    font-size: 20px;
+    margin: 14px;
+}
 
-Date of Creation: 9/10/22
-
-GUI Assignment: Creating Your First Web Page
-
-Meet Kothari, UMass Lowell Computer Science, meet_kothari@student.uml.edu
-
-This is a style sheet for HW1. It helps with readability for the index file. 
-
-*/    
-    
-    body { background-color: #deb887  }  /* Makes the background of the webpage a creamish color! I thought the white was jarring to look at. */
-    
-
-    .title-meet { /* CSS styling for the title of my page! */
-        background-color: #FFEAD5;;
-        color: #c154c1;
-        border: dotted 6px;
-        height: 40px;
-        width:  225px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 2px 2px #999;
-        padding: 10px 10px 20px 10px;
-        margin-right: 8px;
-        position: absolute;
-        top: 33px;right:550px;
-        text-align: center;
-        font-family: Arial;
-        font-weight: bolder;
-        font-size: 20px;
-        
-    }
-
-    .info-bubble { /* CSS Stlying for the 'info' bubble that shows where the links are */
-        background-color: #FFEAD5;;
-        color: #c154c1;
-        border: dotted 6px;
-        height: 100px;
-        width:  225px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 2px 2px #999;
-        padding: 10px 10px 20px 10px;
-        margin-right: 460px;
-        position: absolute;
-        top: 33px;right:550px;
-        text-align: center;
-        font-family: Arial;
-        font-weight: bolder;
-        font-size: 15px;
-
-    }
-
-    .goat { /* Same styling as intro button, a bit larger, with different font color! Serves as a title. */
-        background-color: #FFEAD5;;
-        color: #FF5733;
-        border: dotted 6px;
-        height: 20px;
-        width:  225px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 2px 2px #999;
-        padding: 10px 10px 20px 10px;
-        cursor: pointer;
-        margin-right: 8px;
-        position: absolute;
-        top: 203px;
-        right:1000px;
-        text-align: center;
-        font-family: Arial;
-        font-weight: bolder;
-        font-size: 20px;
-
-    }
-
-    .mj-table, th, td { /* Styling for first table, used black for readability */
-        margin-top: 300px;
-        background-color: #FFEAD5;;
-        color: black;
-        width: 200px;
-        height: 100px;
-        border: dotted 6px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 2px 2px #999;
-        padding: 10px 10px 20px 10px;
-        font-family: Arial;
-        font-weight: bold;
-
-    }
-
-    .mjspiel { /* CSS Styling for my paragraph about why MJ is the GOAT...which he is... */
-        margin-top: 50px;
-        margin-left: 100px;
-        background-color: #FFEAD5;;
-        color: #FF5733;
-        width: 450px;
-        height: 110px;
-        border: dotted 6px;
-        border-radius: 15px;
-        padding: 10px 10px 20px 20px;
-        box-shadow: 0px 0px 2px 2px #999;
-        font-family: Arial;
-        font-weight: bold;
-    }
-
-    .mjpic { /* Moving the pic around and giving it rounded edges so it looks nicer */
-        width: 400px; 
-        height: 200px; 
-        position: absolute;
-        top: 400px;
-        right: 50px;
-        border: 2px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 2px 2px #999;
-    }
-    .lbj { /* Same styling as intro button, a bit larger, with different font color! */
-        background-color: #FFEAD5;;
-        color: #A7C7E7;
-        border: dotted 6px;
-        height: 20px;
-        width:  225px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 2px 2px #999;
-        padding: 10px 10px 20px 10px;
-        cursor: pointer;
-        margin-right: 8px;
-        position: absolute;
-        top: 730px;
-        right:1000px;
-        text-align: center;
-        font-family: Arial;
-        font-weight: bolder;
-        font-size: 20px;
-
-    }
-    
-    .lbj-table, th, td{ /* sets up lebrons table */
-        margin-top: 165px;
-        background-color: #FFEAD5;;
-        color: black;
-        width: 200px;
-        height: 100px;
-        border: dotted 6px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 2px 2px #999;
-        padding: 10px 10px 20px 10px;
-        font-family: Arial;
-        font-weight: bold;
-
-    }
-
-    .lbjspiel { /* formats the text about lebron, reuses lots of code from original */
-        margin-top: 50px;
-        margin-left: 100px;
-        background-color: #FFEAD5;;
-        color: #A7C7E7;
-        width: 450px;
-        height: 140px;
-        border: dotted 6px;
-        border-radius: 15px;
-        padding: 10px 10px 20px 20px;
-        box-shadow: 0px 0px 2px 2px #999;
-        font-family: Arial;
-        font-weight: bold;
-    }
-
-    .lbjpic { /* Moving the pic around and giving it rounded edges so it looks nicer */
-        width: 400px; 
-        height: 200px; 
-        position: absolute;
-        top: 1000px;
-        right: 50px;
-        border: 2px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 2px 2px #999;
-    }
-
-    .kobe { /* Same styling as intro button, a bit larger, with different font color! */
-        background-color: #FFEAD5;;
-        color: #c154c1;
-        border: dotted 6px;
-        height: 20px;
-        width:  225px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 2px 2px #999;
-        padding: 10px 10px 20px 10px;
-        cursor: pointer;
-        margin-right: 8px;
-        position: absolute;
-        top: 1330px;
-        right:1000px;
-        text-align: center;
-        font-family: Arial;
-        font-weight: bolder;
-        font-size: 20px;
-
-    }
-    
-    .kobe-table, th, td{ /* this is the css styling for kobe's table, code is same as other tables minus the position */
-        margin-top: 165px;
-        background-color: #FFEAD5;;
-        color: black;
-        width: 200px;
-        height: 100px;
-        border: dotted 6px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 2px 2px #999;
-        padding: 10px 10px 20px 10px;
-        font-family: Arial;
-        font-weight: bold;
-
-    }
-
-    .kobespiel{ /* used to edit kobe's text */
-        margin-top: 50px;
-        margin-left: 100px;
-        background-color: #FFEAD5;;
-        color: #c154c1;
-        width: 450px;
-        height: 180px;
-        border: dotted 6px;
-        border-radius: 15px;
-        padding: 10px 10px 20px 20px;
-        box-shadow: 0px 0px 2px 2px #999;
-        font-family: Arial;
-        font-weight: bold;
-    }
-
-    .kobepic { /* Moving the pic around and giving it rounded edges so it looks nicer */
-        width: 400px; 
-        height: 200px; 
-        position: absolute;
-        top: 1600px;
-        right: 50px;
-        border: 2px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 2px 2px #999;
-    }
-
-    .magic { /* Same styling as intro button, a bit larger, with different font color! */
-        background-color: #FFEAD5;;
-        color: #545aa7;
-        border: dotted 6px;
-        height: 20px;
-        width:  225px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 2px 2px #999;
-        padding: 10px 10px 20px 10px;
-        cursor: pointer;
-        margin-right: 8px;
-        position: absolute;
-        top: 2030px;
-        right:1000px;
-        text-align: center;
-        font-family: Arial;
-        font-weight: bolder;
-        font-size: 20px;
-
-    }
-
-    .magic-table, th, td{ /* this is the css styling for magic's table, code is same as other tables minus the position */
-        margin-top: 240px;
-        background-color: #FFEAD5;;
-        color: black;
-        width: 200px;
-        height: 100px;
-        border: dotted 6px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 2px 2px #999;
-        padding: 10px 10px 20px 10px;
-        font-family: Arial;
-        font-weight: bold;
-
-    }
-
-    .magicspiel { /* used to manipulate magic johnson's text */
-        margin-top: 50px;
-        margin-left: 100px;
-        background-color: #FFEAD5;;
-        color: #545aa7;
-        width: 450px;
-        height: 180px;
-        border: dotted 6px;
-        border-radius: 15px;
-        padding: 10px 10px 20px 20px;
-        box-shadow: 0px 0px 2px 2px #999;
-        font-family: Arial;
-        font-weight: bold;
-    }
-
-
-    .magicpic { /* Moving the pic around and giving it rounded edges so it looks nicer */
-        width: 400px; 
-        height: 200px; 
-        position: absolute;
-        top: 2200px;
-        right: 50px;
-        border: 2px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 2px 2px #999;
-    }
+.footer {
+    margin-top: 1000px;
+    font-style: italic;
+}
