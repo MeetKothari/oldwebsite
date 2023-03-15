@@ -241,6 +241,7 @@ body {
   font-weight: bolder;
   text-align: left;
   padding-left: 150px;
+  padding-bottom: 10px;
   font-size: 20px;
   color: #5de2c2;
 
@@ -487,6 +488,14 @@ body {
 
 
 /* Contact section styles */
+
+.contact_me{
+
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  text-align: left;
+  padding-left: 150px;
+}
 .contact {
   padding: 5rem 0;
 }
