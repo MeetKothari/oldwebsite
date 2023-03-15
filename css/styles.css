@@ -1,21 +1,307 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 /* Set default font and background colors */
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+
+:root {
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2,12,27,0.7);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100,255,218,0.1);
+    --pink: #f57dff;
+    --blue: #57cbff;
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heading: 32px;
+    --border-radius: 4px;
+    --nav-height: 100px;
+    --nav-scroll-height: 70px;
+    --tab-height: 42px;
+    --tab-width: 120px;
+    --easing: cubic-bezier(0.645,0.045,0.355,1);
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    --hamburger-width: 30px;
+    --ham-before: top 0.1s ease-in 0.25s,opacity 0.1s ease-in;
+    --ham-before-active: top 0.1s ease-out,opacity 0.1s ease-out 0.12s;
+    --ham-after: bottom 0.1s ease-in 0.25s,transform 0.22s cubic-bezier(0.55,0.055,0.675,0.19);
+    --ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,0.355,1) 0.12s;
 }
+body {
+    margin: 0px;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--navy);
+    color: var(--slate);
+    font-family: var(--font-sans);
+    font-size: var(--fz-xl);
+    line-height: 1.3;
+}
+
+/* Project Cards */
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 55px;
+}
+
+.card {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #0e2444;
+  
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1); /* add a transition-timing-function */
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.card-title:hover{
+   transform: translateY(-5px); /* move the icon up by 5px on hover */
+  color: #5de2c2;
+}
+
+.card-text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #8892b0;
+  font-family: "Inter";
+}
+
+.card-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #007bff;
+}
+
+
+.card-link:hover {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+.card_icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.card_icon {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 300px;
+  text-decoration: none;
+  list-style-type: none;
+  color: #8892b0;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1); /* add a transition-timing-function */
+}
+
+.card_icon:hover {
+  transform: translateY(-5px); /* move the icon up by 5px on hover */
+  color: #5de2c2;
+}
+
+.card_icon:last-child {
+  text-align: right;
+}
+
+.card-footer {
+  background-color: #f9f9f9;
+  border-radius: 0 0 8px 8px;
+  padding: 1rem;
+}
+
+
+/* Vertical Social Media Icons */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #0b192f;
+  z-index: 1;
+  list-style: none;
+}
+
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar ul li:hover i {
+  color: #5de2c2; /* Light green */
+  transform: translateY(-5px); /* Move up 5 pixels */
+  transition: all 0.2s ease-in-out; /* Animate the transition */
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar i {
+  margin-right: 1rem;
+}
+
+#sidebar_list {
+  font-size: 2rem;
+  color: #8892b0;
+}
+
+#sidebar_list:hover {
+  color: #5de2c2;
+}
+
+/* misc */
+
+.separator {
+  height: 1px;
+   background: #8892b0;
+}
+
+
+
 
 /* Header styles */
 .header {
   height: 100vh;
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.header {
+  position: fixed;
+}
+
+#content {
+  margin-top: 100px;
+}
+
+.title {
+
+  font-family: 'Inter';
+  font-weight: bolder;
+  text-align: left;
+  padding-left: 150px;
+  font-size: 20px;
+  color: #5de2c2;
+
+}
+
+
+/* welcome messages */
+
+#home{
+  line-height: 1.2em;
+}
+
+.hello {
+  font-family: 'Space Mono';
+  padding-top: 125px;
+  text-align: left;
+  padding-left: 150px;
+  font-size: 17px;
+  color: #5de2c2
+} 
+
+.name {
+  font-family: 'Inter';
+  font-weight: bolder;
+  text-align: left;
+  padding-left: 150px;
+  font-size: 60px;
+  color: #ccd6f6;
+  text-shadow: #8892b0 .5px .5px;
+
+}
+
+.bio {
+  font-family: 'Inter';
+  font-weight: bolder;
+  text-align: left;
+  padding-left: 150px;
+  font-size: 60px;
+  color: #8892b0;
+  text-shadow: #ccd6f6 .5px .5px;
+}
+
+.biomessage{
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  text-align: left;
+  padding-left: 150px;
+  font-size: 20px;
+  color: #8892b0;
+
+}
+
+.biomessagep2{
+
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  text-align: left;
+  padding-left: 150px;
+  font-size: 20px;
+  color: #8892b0;
+
 }
 
 .header__bg {
@@ -55,14 +341,45 @@ body {
 }
 
 /* About section styles */
-.about {
-  padding: 5rem 0;
+
+.navbar_corresponding::before {
+    position: relative;
+    bottom: 4px;
+    counter-increment: section 1;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-md),3vw,var(--fz-xl));
+    font-weight: 400;
+}
+.navbar_corresponding {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 100px 0px 40px;
+    width: 100%;
+    font-size: clamp(26px,5vw,var(--fz-heading));
+    white-space: nowrap;
+    padding-left: 150px;
+}
+
+.navbar_corresponding::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--lightest-navy);
+
 }
 
 .about__title {
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 2rem;
 }
 
 .about__text {
@@ -123,11 +440,15 @@ body {
 
 .navbar {
   display: flex;
+  margin-left: 800px;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #1a1a1a;
+  background-color: #0b192f;
+  opacity: 0.8;
   color: #fff;
+  font-family: 'Space Mono';
 }
 
 .navbar__logo {
@@ -139,26 +460,29 @@ body {
 }
 
 .navbar__menu {
-  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.navbar__item {
-  margin: 0 1rem;
+.navbar__item{
+   display: inline-block;
+}
+
+.navbar__item::before {
+  content: attr(data-number) ". "; /* Use the `data-number` attribute to insert the number before the text */
+  color: #8892b0; /* Set the color of the number */
 }
 
 .navbar__link {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  color: #FFFFFF; /* Set the color of the link text */
+  padding: 10px;
 }
 
+
 .navbar__link:hover {
-  color: #f2c94c;
+  color: #8892b0;
 }
 
 
